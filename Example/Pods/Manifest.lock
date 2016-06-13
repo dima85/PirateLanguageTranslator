@@ -1,0 +1,16 @@
+PODS:
+  - PirateLanguageTranslator (0.1.0)
+
+DEPENDENCIES:
+  - PirateLanguageTranslator (from `../`)
+
+EXTERNAL SOURCES:
+  PirateLanguageTranslator:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PirateLanguageTranslator: 842653c46778948b8b54013be3f2df8da4f5f458
+
+PODFILE CHECKSUM: 11f0b04ee87df247567679cdd37771b3a46ea34c
+
+COCOAPODS: 1.0.0

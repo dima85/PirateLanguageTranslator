@@ -1,0 +1,22 @@
+{
+  "name": "PirateLanguageTranslator",
+  "version": "0.1.0",
+  "summary": "A short description of PirateLanguageTranslator.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/PirateLanguageTranslator",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Dmytro.Shykaliuk": "dmytro.shykaliuk@check24.de"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/PirateLanguageTranslator.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PirateLanguageTranslator/Classes/**/*"
+}

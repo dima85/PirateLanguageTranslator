@@ -1,0 +1,6 @@
+framework module Pods_PirateLanguageTranslator_Example {
+  umbrella header "Pods-PirateLanguageTranslator_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module PirateLanguageTranslator {
+  umbrella header "PirateLanguageTranslator-umbrella.h"
+
+  export *
+  module * { export * }
+}
