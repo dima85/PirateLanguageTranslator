@@ -12,11 +12,15 @@
 		3E80B2BCAB7B54C7356B858E7D252769 /* Pods-PirateLanguageTranslator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E206B9EEAA829B8112BD5A6D055C287B /* Pods-PirateLanguageTranslator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42C1A7DBE709A6D859405A982BF8B28C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		4DEAC7A42EBC12F6074EE7770E2EEC85 /* PirateLanguageTranslator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AACEB0C2CC9974A1678CC2A0AE3458 /* PirateLanguageTranslator-dummy.m */; };
-		7E5CB4C1041A24D7CA1AD43EA69BD297 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D23F184763699EDF9097C0C4260E17F /* ReplaceMe.swift */; };
 		C5D4DEA5167A80760C05F57A670B81B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		C6548594B04AEE85D832CA17B5A6B560 /* Pods-PirateLanguageTranslator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437DB482CFCEC0953893E8EC355A469 /* Pods-PirateLanguageTranslator_Example-dummy.m */; };
 		CB68ADE36BA511BB68989280C1EAF050 /* Pods-PirateLanguageTranslator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6864ECD7BF78CEC0CCBBBBEC0FCD2BB /* Pods-PirateLanguageTranslator_Tests-dummy.m */; };
 		D963943F25A4373BCA9FBFEFEF31805C /* Pods-PirateLanguageTranslator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD7FD44F3BE3B1C875FE1E423DA4D38 /* Pods-PirateLanguageTranslator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8B365DC1D0EFAEB0085C1F8 /* TranslationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B365D71D0EFAEB0085C1F8 /* TranslationData.swift */; };
+		E8B365DD1D0EFAEB0085C1F8 /* PirateLanguageTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B365D81D0EFAEB0085C1F8 /* PirateLanguageTranslator.swift */; };
+		E8B365DE1D0EFAEB0085C1F8 /* PTranslationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B365D91D0EFAEB0085C1F8 /* PTranslationProvider.swift */; };
+		E8B365DF1D0EFAEB0085C1F8 /* PTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B365DA1D0EFAEB0085C1F8 /* PTranslator.swift */; };
+		E8B365E01D0EFAEB0085C1F8 /* RemoteTranslationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B365DB1D0EFAEB0085C1F8 /* RemoteTranslationProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +55,6 @@
 		91C58C1E7034CA887EF09F12D2E85D3B /* PirateLanguageTranslator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PirateLanguageTranslator.modulemap; sourceTree = "<group>"; };
 		938225B2BE0D15C35C405E6609EB401C /* Pods-PirateLanguageTranslator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PirateLanguageTranslator_Tests.modulemap"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D23F184763699EDF9097C0C4260E17F /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		A3E4E10C1F3A354B70DBDB0E9E0DABDB /* Pods-PirateLanguageTranslator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PirateLanguageTranslator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		AC79D10DF537FC326E4940F6ADC0A225 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF3EC54FCC262AA3A51FA07D33D74966 /* Pods-PirateLanguageTranslator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PirateLanguageTranslator_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +63,11 @@
 		C4EDA22725F655486082B105A4F313DC /* Pods-PirateLanguageTranslator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PirateLanguageTranslator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E206B9EEAA829B8112BD5A6D055C287B /* Pods-PirateLanguageTranslator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PirateLanguageTranslator_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E8B365D71D0EFAEB0085C1F8 /* TranslationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationData.swift; sourceTree = "<group>"; };
+		E8B365D81D0EFAEB0085C1F8 /* PirateLanguageTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PirateLanguageTranslator.swift; sourceTree = "<group>"; };
+		E8B365D91D0EFAEB0085C1F8 /* PTranslationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTranslationProvider.swift; sourceTree = "<group>"; };
+		E8B365DA1D0EFAEB0085C1F8 /* PTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTranslator.swift; sourceTree = "<group>"; };
+		E8B365DB1D0EFAEB0085C1F8 /* RemoteTranslationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteTranslationProvider.swift; sourceTree = "<group>"; };
 		F1F967FA419B47B53BAA025136D6D83A /* Pods-PirateLanguageTranslator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PirateLanguageTranslator_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		F6864ECD7BF78CEC0CCBBBBEC0FCD2BB /* Pods-PirateLanguageTranslator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PirateLanguageTranslator_Tests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,9 +225,29 @@
 		DF8184FF2BCB215C6BC336C35A7E6790 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9D23F184763699EDF9097C0C4260E17F /* ReplaceMe.swift */,
+				E8B365D51D0EFAEB0085C1F8 /* Translator */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		E8B365D51D0EFAEB0085C1F8 /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				E8B365D61D0EFAEB0085C1F8 /* Data */,
+				E8B365D81D0EFAEB0085C1F8 /* PirateLanguageTranslator.swift */,
+				E8B365D91D0EFAEB0085C1F8 /* PTranslationProvider.swift */,
+				E8B365DA1D0EFAEB0085C1F8 /* PTranslator.swift */,
+				E8B365DB1D0EFAEB0085C1F8 /* RemoteTranslationProvider.swift */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
+		E8B365D61D0EFAEB0085C1F8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E8B365D71D0EFAEB0085C1F8 /* TranslationData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,8 +373,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B365E01D0EFAEB0085C1F8 /* RemoteTranslationProvider.swift in Sources */,
+				E8B365DD1D0EFAEB0085C1F8 /* PirateLanguageTranslator.swift in Sources */,
+				E8B365DF1D0EFAEB0085C1F8 /* PTranslator.swift in Sources */,
 				4DEAC7A42EBC12F6074EE7770E2EEC85 /* PirateLanguageTranslator-dummy.m in Sources */,
-				7E5CB4C1041A24D7CA1AD43EA69BD297 /* ReplaceMe.swift in Sources */,
+				E8B365DC1D0EFAEB0085C1F8 /* TranslationData.swift in Sources */,
+				E8B365DE1D0EFAEB0085C1F8 /* PTranslationProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
