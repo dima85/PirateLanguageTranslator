@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PirateLanguageTranslator_Example' do
+  pod 'PirateLanguageTranslator', :path => '../'
+
+  target 'PirateLanguageTranslator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
