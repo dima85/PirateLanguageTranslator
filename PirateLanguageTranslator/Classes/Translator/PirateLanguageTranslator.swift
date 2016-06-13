@@ -7,19 +7,19 @@
 //
 import UIKit
 
-class PirateLanguageTranslator: PTranslator {
+public class PirateLanguageTranslator: PTranslator {
     
     let translator: PTranslationProvider!
     
-    init() {
+    public init() {
         self.translator = RemoteJsonTranslationProvider()
     }
     
-    init(translator: PTranslationProvider) {
+    public init(translator: PTranslationProvider) {
         self.translator = translator
     }
     
-    func translate(text: String, success: (translated: String) -> Void, failure: (error: NSError) -> Void) {
+    public func translate(text: String, success: (translated: String) -> Void, failure: (error: NSError) -> Void) {
         translator.makeTranslation(text, success: success, failure: failure)
     }
 }

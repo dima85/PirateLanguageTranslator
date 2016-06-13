@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol PTranslator {
+public protocol PTranslator {
     func translate(text: String, success: (translated: String) -> Void, failure: (error: NSError) -> Void)
 }
