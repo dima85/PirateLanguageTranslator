@@ -1,6 +1,10 @@
-use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/dima85/PirateLanguageTranslator.git'
+
+platform :ios, '8.0'
 
 target 'PirateLanguageTranslator_Example' do
+  use_frameworks!
   pod 'PirateLanguageTranslator', :path => '../'
 
   target 'PirateLanguageTranslator_Tests' do
