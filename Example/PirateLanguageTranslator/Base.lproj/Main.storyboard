@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="PirateLanguageTranslator_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +17,47 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="crO-Wh-qyc">
+                                <rect key="frame" x="20" y="8" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvd-OV-qxi">
+                                <rect key="frame" x="268" y="46" width="64" height="30"/>
+                                <state key="normal" title="Translate"/>
+                                <connections>
+                                    <action selector="btnTranslate_Tapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FTV-hi-tkJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MK3-bM-oIK">
+                                <rect key="frame" x="20" y="84" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="crO-Wh-qyc" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Anb-xo-CAA"/>
+                            <constraint firstItem="MK3-bM-oIK" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Gdh-oz-16H"/>
+                            <constraint firstItem="Kvd-OV-qxi" firstAttribute="top" secondItem="crO-Wh-qyc" secondAttribute="bottom" constant="8" id="Gjl-O7-DHx"/>
+                            <constraint firstItem="MK3-bM-oIK" firstAttribute="top" secondItem="Kvd-OV-qxi" secondAttribute="bottom" constant="8" id="Hgm-J8-4Tn"/>
+                            <constraint firstItem="MK3-bM-oIK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="NWb-r9-ieH"/>
+                            <constraint firstItem="Kvd-OV-qxi" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="VJW-TJ-Khg"/>
+                            <constraint firstItem="crO-Wh-qyc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="YDF-Za-w5a"/>
+                            <constraint firstItem="crO-Wh-qyc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="g22-aa-XWC"/>
+                            <constraint firstItem="crO-Wh-qyc" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="8" id="jl8-v2-NYx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblOutput" destination="MK3-bM-oIK" id="1z2-Bv-68t"/>
+                        <outlet property="tvInput" destination="crO-Wh-qyc" id="eiL-im-kpo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="270" y="241"/>
         </scene>
     </scenes>
 </document>

@@ -1,22 +1,30 @@
 {
   "name": "PirateLanguageTranslator",
   "version": "0.1.0",
-  "summary": "A short description of PirateLanguageTranslator.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/PirateLanguageTranslator",
+  "summary": "Test library for payworks",
+  "description": "Wrapper for calling http://isithackday.com/arrpi.php and convert result.",
+  "homepage": "https://github.com/dima85/PirateLanguageTranslator",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Dmytro.Shykaliuk": "dmytro.shykaliuk@check24.de"
+    "Dmytro.Shykaliuk": "dshykaljuk@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/PirateLanguageTranslator.git",
+    "git": "https://github.com/dima85/PirateLanguageTranslator.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "PirateLanguageTranslator/Classes/**/*"
+  "source_files": "PirateLanguageTranslator/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "~> 3.4"
+    ],
+    "AlamofireObjectMapper": [
+
+    ]
+  }
 }

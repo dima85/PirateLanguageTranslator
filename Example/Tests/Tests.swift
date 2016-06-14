@@ -1,12 +1,15 @@
 import UIKit
 import XCTest
-import PirateLanguageTranslator
+@testable import PirateLanguageTranslator
 
-class Tests: XCTestCase {
+class IntegrationTests: XCTestCase {
+    
+    var translator: PTranslator!
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        translator = PirateLanguageTranslator()
     }
     
     override func tearDown() {
@@ -14,16 +17,21 @@ class Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
+    func test_when_request_translation_should_succesfully_return_translated_text() {
+        let expectation = expectationWithDescription("Successfull translation")
+        
+        var translatedText: String!
+        
+        translator.translate("Hello world!", success: { (translated) in
+            translatedText = translated
+            expectation.fulfill()
+            }) { (error) in
+                XCTFail("No error should appear")
         }
-    }
+        
+        waitForExpectationsWithTimeout(5.0, handler: nil)
+        
+        XCTAssertEqual("Avast world!", translatedText)
+    }    
     
 }
