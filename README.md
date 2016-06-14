@@ -22,7 +22,7 @@ pod "PirateLanguageTranslator"
 
 ## Author
 
-Dmytro.Shykaliuk, dmytro.shykaliuk@check24.de
+Dmitriy Shykaliuk, dshykaljuk@gmail.com
 
 ## License
 
